@@ -26,4 +26,6 @@ urlpatterns = [
     path('dashboard', views.dashboard, name="dashboard"),
     path('logout', views.user_logout, name="user_logout"),
     path('addbook', views.addbook, name="addbook"),
+    path('updatebook/<str:id>', views.updatebook, name="updatebook"),
+    path('deletebook/<str:id>', views.deletebook, name="deletebook"),
 ]
