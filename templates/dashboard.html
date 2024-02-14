@@ -69,6 +69,8 @@
             <td></td>
             <td>{{ book.name }}</td>
             <td>{{ book.desc }}</td>
+            <td><a href="{% url "updatebook" book.id %}">Edit</a></td>
+            <td><a href="{% url "deletebook" book.id %}" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a></td>
 
           </tr>
           {% endfor %}
